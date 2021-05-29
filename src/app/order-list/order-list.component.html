@@ -1,0 +1,14 @@
+<div class="row">
+    Total Number Of Items : {{orders.length}}
+    <div style="padding:2% 5%;" *ngFor="let order of orders; let num = index">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" [ngModel]="false"> {{order.name}}
+            </label>
+        </div>
+    </div>
+
+    <div *ngIf="orders.length > 0">
+        <button class="w3-bar-item w3-button w3-red" (click)="clearOrders()"> Clear Orders</button>
+    </div>
+</div>
