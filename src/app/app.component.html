@@ -8,9 +8,9 @@
     </div>
     <div class="col-lg-10 col-md-10 col-sm-12">
       <div class="w3-bar w3-teal">
-        <button class="w3-bar-item w3-button" (click)="clickEvent()" [ngClass]="status ? 'w3-green' : ''"
+        <button class="w3-bar-item w3-button" (click)="activeTab()" [ngClass]="status ? 'w3-green' : ''"
           routerLink="/">PRODUCTS</button>
-        <button class="w3-bar-item w3-button" (click)="clickEvent()" [ngClass]="!status ? 'w3-green' : ''"
+        <button class="w3-bar-item w3-button" (click)="activeTab()" [ngClass]="!status ? 'w3-green' : ''"
           routerLink="/store">STORES</button>
       </div>
     </div>
