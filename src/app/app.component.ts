@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'smytten-app';
+  status = true;
+  activeTab() {
+    this.status = !this.status;
+  }
 }
