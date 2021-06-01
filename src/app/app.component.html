@@ -4,12 +4,14 @@
     <div class="col-lg-2 col-md-2 orderList">
       <div class="w3-bar w3-blue">
         <button class="w3-bar-item w3-button" routerLink="app-order-list"> ORDERS</button>
-    </div>
+      </div>
     </div>
     <div class="col-lg-10 col-md-10 col-sm-12">
       <div class="w3-bar w3-teal">
-        <button class="w3-bar-item w3-button active" routerLink="/">PRODUCTS</button>
-        <button class="w3-bar-item w3-button" routerLink="/store">STORES</button>
+        <button class="w3-bar-item w3-button" (click)="clickEvent()" [ngClass]="status ? 'w3-green' : ''"
+          routerLink="/">PRODUCTS</button>
+        <button class="w3-bar-item w3-button" (click)="clickEvent()" [ngClass]="!status ? 'w3-green' : ''"
+          routerLink="/store">STORES</button>
       </div>
     </div>
   </div>
